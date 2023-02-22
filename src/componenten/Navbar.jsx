@@ -1,16 +1,39 @@
 import React from "react";
+import logo from "../assets/logo.png"
 
-function navbar() {
+
+const Navbar = () => {
   return (
-    <nav className="flex justify-between p-8 bg-slate-800 text-white">
-      <h1>Title</h1>
-
-      <ul className="flex gap-4">
-        <li>Home</li>
-        <li>About</li>
-      </ul>
-    </nav>
+    <div className='bg-slate-800'>
+      <nav className="container mx-auto flex justify-between p-8 bg-slate-800 text-white"><a href="/">
+          <img src={logo} className="w-10" alt="logo" />
+        </a>
+                   
+        <ul className="flex gap-14"> 
+          <li>
+            <a href={"/bestuur"} className='hover:bg-sky-700'>
+              Bestuur 
+            </a>
+            </li>
+            <li>
+                <a href={"/over"} className='hover:bg-sky-700'>
+                  Over 
+                </a>
+            </li>
+            <li>
+                <a href={"/ploegen"} className='hover:bg-sky-700'>
+                  Ploegen 
+                </a>
+            </li>
+            <li>
+                <a href={"/contact"} className='hover:bg-sky-700'>
+                  Contact 
+                </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
   );
-}
+};
 
-export default navbar;
+export default Navbar;
