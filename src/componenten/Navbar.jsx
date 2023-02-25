@@ -1,38 +1,38 @@
 import React from "react";
 import logo from "../assets/logo.png"
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 
 const Navbar = () => {
   return (
-    <div className='bg-slate-800'>
-      <nav className="container mx-auto flex justify-between p-8 bg-slate-800 text-white"><a href="/">
-          <img src={logo} className="w-10" alt="logo" />
-        </a>
-                   
-        <ul className="flex gap-14"> 
-          <li>
-            <a href={"/bestuur"} className='hover:bg-sky-700'>
-              Bestuur 
-            </a>
-            </li>
-            <li>
-                <a href={"/over"} className='hover:bg-sky-700'>
-                  Over 
+      <nav class="bg-yellow-400 shadow-lg">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+              <a href={'/'}>
+                <img class="h-8 w-8" src={logo} alt="Logo"/>
+              </a>
+          </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center justify-end">
+            <a href={'/bestuur'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Bestuur</a>
+            <a href={'/over'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Over ons</a>
+            <a href={'/ploegen'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Ploegen</a>
+            <a href={'/contact'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Contact</a>
+            <div className="flex justify-end text-2xl ml-2">
+                <a href='https://www.facebook.com/' target={"_blank"} rel={"noreferrer"} className="hover:text-red-600 mr-2">
+                    <FaFacebookSquare/>
                 </a>
-            </li>
-            <li>
-                <a href={"/ploegen"} className='hover:bg-sky-700'>
-                  Ploegen 
+                <a href='https://www.instagram.com/' target={"_blank"} rel={"noreferrer"}  className="hover:text-red-600">
+                      <FaInstagram/>
                 </a>
-            </li>
-            <li>
-                <a href={"/contact"} className='hover:bg-sky-700'>
-                  Contact 
-                </a>
-            </li>
-          </ul>
-      </nav>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </nav>
   );
 };
 

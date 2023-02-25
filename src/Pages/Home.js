@@ -1,33 +1,21 @@
 import React from 'react';
-import sponsor1 from "../assets/sponser.png"
-import sponsor2 from "../assets/twitch.png"
-import gras from "../assets/gras3.jpg"
+import gras from "../assets/grasA.png"
+import HomeNews from '../componenten/HomeNews';
+import ScrollBanner from '../componenten/ScrollBanner';
 
 const Home = () => {
     return (
-        <div className="flex flex-row bg-slate-400">
-        <div className="basis-11/12">
-           <img src={gras} alt={"gras"}/>
-        </div>
-        <div className="basis-1/12">
-            <div className='sponsorslider'>
-                <div className='sponsorbanner'>
-                    <img src={sponsor1} alt={"sponsor 1"}/>
-                    <img src={sponsor2} alt={"sponsor 2"}/>
-                    <img src={sponsor1} alt={"sponsor 1"}/>
-                    <img src={sponsor2} alt={"sponsor 2"}/>
-                    <img src={sponsor1} alt={"sponsor 1"}/>
-                    <img src={sponsor2} alt={"sponsor 2"}/>
-                    <img src={sponsor1} alt={"sponsor 1"}/>
-                    <img src={sponsor2} alt={"sponsor 2"}/>
-                    <img src={sponsor1} alt={"sponsor 1"}/>
-                    <img src={sponsor2} alt={"sponsor 2"}/>
+       <div>
+            <img src={gras} className="w-full" alt="Gras" />
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 className="text-white lg:text-7xl sm:text-3xl font-bold drop-shadow-lg">Voetbalclub Duffel</h2>
+                    <p className="text-white md:text-3xl sm:text-xl mt-2 font-regular drop-shadow-lg">De beste club van Duffel en omstreken</p>
                 </div>
-            </div>
+            <ScrollBanner/>
+            <HomeNews/>
         </div>
-   </div>
     );
-    
+
 };
 
 export default Home;
