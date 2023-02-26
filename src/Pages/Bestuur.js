@@ -19,7 +19,11 @@ const Bestuur = () => {
                     <br/> familiedag, verkoop sleutelhangers, kledij,
                     stickerboek, pro soccer data, flames …
                 </h6>
+            </div>    
+            <div className='my-5'>
                 <TableJeugdbestuur/>
+            </div>
+            <div>
                 <h2 className='text-xl text-center my-5 font-bold text-red-400'>
                     Bestuur bovenbouw
                 </h2>
@@ -30,8 +34,10 @@ const Bestuur = () => {
                     <br/> familiedag, verkoop sleutelhangers, kledij,
                     stickerboek, pro soccer data, flames …
                 </h6>
-                <TableBestuur/>
             </div>
+            <div className='my-5'>
+                <TableBestuur/>
+            </div>    
         </div>
     );
 };

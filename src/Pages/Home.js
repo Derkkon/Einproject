@@ -1,5 +1,5 @@
 import React from 'react';
-import gras from "../assets/grasA.png"
+import gras from "../assets/grasA_1.png"
 import HomeNews from '../componenten/HomeNews';
 import ScrollBanner from '../componenten/ScrollBanner';
 
