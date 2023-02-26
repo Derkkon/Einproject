@@ -83,7 +83,16 @@ const Over = () => {
                 <h2 className='text-xl text-center mt-5 font-bold text-red-400 mb-5'>
                     Waar ons te vinden?
                 </h2> 
-                
+            </div>
+            <div className='text-md text-center mt-4 font-regular mx-3'>
+                <h6>
+                    Je kan ons vinden op Rooienberg 56, 2570 Duffel
+                </h6>
+            
+            
+                <a href='https://www.google.be/maps/place/Sporting+Club+Duffel/@51.097385,4.4918239,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fb95e8771ad5:0xb30c06c90bee4675!8m2!3d51.097385!4d4.4940126!16s%2Fg%2F11hft0tgt5'>
+                    klik
+                </a>
             </div>
             
         </div>

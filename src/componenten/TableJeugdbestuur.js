@@ -2,50 +2,48 @@ import React from 'react';
 
 const TableJeugdbestuur = () => {
     return (
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Naam</th>
-                        <th>Functie</th>
-                        <th>E-mail</th>
-                        <th>Mobiel</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Everaerts Tim</td>
-                        <td>AVJO / Jeugdvoorzitter</td>
-                        <td>tim@scduffel.be</td>
-                        <td>0489/740210</td>
-                    </tr>
-                    <tr>
-                        <td>Bernaerts Peter</td>
-                        <td>OVJO</td>
-                        <td>peter@scduffel.be</td>
-                        <td>0486/686888</td>
-                    </tr>
-                    <tr>
-                        <td>Ruelens Gilles</td>
-                        <td>Secretaris</td>
-                        <td>gilles@scduffel.be</td>
-                        <td>0475/944088</td>
-                    </tr>
-                    <tr>
-                        <td>Vergaelen Paul</td>
-                        <td>Penningmeester</td>
-                        <td>paul@scduffel.be</td>
-                        <td>0478/887698</td>
-                    </tr>
-                    <tr>
-                        <td>Meulepas Ronny</td>
-                        <td>GC</td>
-                        <td>ronny@scduffel.be</td>
-                        <td>0474/635331</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <table className='container mx-auto border-separate border border-slate-400'>
+            <thead>
+                <tr>
+                    <th className='border border-slate-300'>Naam</th>
+                    <th className='border border-slate-300'>Functie</th>
+                    <th className='border border-slate-300'>E-mail</th>
+                    <th className='border border-slate-300'>Mobiel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className='border border-slate-300'>Everaerts Tim</td>
+                    <td className='border border-slate-300'>AVJO / Jeugdvoorzitter</td>
+                    <td className='border border-slate-300'>tim@scduffel.be</td>
+                    <td className='border border-slate-300'>0489/740210</td>
+                </tr>
+                <tr>
+                    <td className='border border-slate-300'>Bernaerts Peter</td>
+                    <td className='border border-slate-300'>OVJO</td>
+                    <td className='border border-slate-300'>peter@scduffel.be</td>
+                    <td className='border border-slate-300'>0486/686888</td>
+                </tr>
+                <tr>
+                    <td className='border border-slate-300'>Ruelens Gilles</td>
+                    <td className='border border-slate-300'>Secretaris</td>
+                    <td className='border border-slate-300'>gilles@scduffel.be</td>
+                    <td className='border border-slate-300'>0475/944088</td>
+                </tr>
+                <tr>
+                    <td className='border border-slate-300'>Vergaelen Paul</td>
+                    <td className='border border-slate-300'>Penningmeester</td>
+                    <td className='border border-slate-300'>paul@scduffel.be</td>
+                    <td className='border border-slate-300'>0478/887698</td>
+                </tr>
+                <tr>
+                    <td className='border border-slate-300'>Meulepas Ronny</td>
+                    <td className='border border-slate-300'>GC</td>
+                    <td className='border border-slate-300'>ronny@scduffel.be</td>
+                    <td className='border border-slate-300'>0474/635331</td>
+                </tr>
+            </tbody>
+        </table>
     );
 };
 

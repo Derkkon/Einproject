@@ -6,16 +6,16 @@ import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-      <nav class="bg-yellow-400 shadow-lg">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <div class="flex-shrink-0">
+      <nav className="bg-yellow-400 shadow-lg">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex-shrink-0">
               <a href={'/'}>
-                <img class="h-8 w-8" src={logo} alt="Logo"/>
+                <img className="h-8 w-8" src={logo} alt="Logo"/>
               </a>
           </div>
-        <div class="hidden md:block">
-          <div class="ml-4 flex items-center justify-end">
+        <div className="hidden md:block">
+          <div className="ml-4 flex items-center justify-end">
             <a href={'/bestuur'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Bestuur</a>
             <a href={'/over'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Over ons</a>
             <a href={'/ploegen'} className="text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Ploegen</a>

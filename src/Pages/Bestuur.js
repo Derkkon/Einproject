@@ -12,7 +12,7 @@ const Bestuur = () => {
                 Jeugdbestuur & werking
             </h2>
             <div>
-                <h6 className='text-md text-center mt-5 font-regular mx-3'>
+                <h6 className='text-md text-center my-5 font-regular mx-3'>
                     Naast het jeugdbestuur hebben we ook een jeugdwerking, dit zijn een gedreven groep vrijwilligers die zich
                     <br/> meer dan 100% inzetten voor onze jeugdwerking op verschillende vlakken. Denk maar aan:
                     <br/> Website, organiseren van events, sociale media , sponsoring, ontbijtmanden, afgevaardigden, tornooien,
@@ -23,6 +23,13 @@ const Bestuur = () => {
                 <h2 className='text-xl text-center my-5 font-bold text-red-400'>
                     Bestuur bovenbouw
                 </h2>
+                <h6 className='text-md text-center my-5 font-regular mx-3'>
+                    Naast het jeugdbestuur hebben we ook een jeugdwerking, dit zijn een gedreven groep vrijwilligers die zich
+                    <br/> meer dan 100% inzetten voor onze jeugdwerking op verschillende vlakken. Denk maar aan:
+                    <br/> Website, organiseren van events, sociale media , sponsoring, ontbijtmanden, afgevaardigden, tornooien,
+                    <br/> familiedag, verkoop sleutelhangers, kledij,
+                    stickerboek, pro soccer data, flames …
+                </h6>
                 <TableBestuur/>
             </div>
         </div>
