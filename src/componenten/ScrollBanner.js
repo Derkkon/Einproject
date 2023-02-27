@@ -6,8 +6,8 @@ import sponor4 from '../assets/sponsors/nike_PNG20.png'
 
 const ScrollBanner = () => {
     return (
-        <div class="sponsor-slider mt-10">
-            <div class="flex flex-wrap sponsor-banner">
+        <div className="sponsor-slider mt-10">
+            <div className="flex flex-wrap sponsor-banner">
                 <a href='https://www.carrefour.be/nl.html' target={"_blank"} rel={"noreferrer"}>
                     <img src={sponor1} className="w-1/12 md:w-40 grayscale hover:grayscale-0" alt={'Carrefour'} />
                 </a>
