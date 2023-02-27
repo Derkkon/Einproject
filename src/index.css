@@ -20,17 +20,25 @@ code {
 .sponsor-slider {
   overflow-x: hidden;
 }
-.sponsor-banner { 
+
+.sponsor-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 }
-.sponsor-banner img{
+
+.sponsor-banner img {
   width: 10em;
   margin-left: 10em;
 }
+
 @keyframes scroll {
-    0%   { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
