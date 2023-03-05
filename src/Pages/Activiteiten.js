@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TableBestuur = () => {
+const Activiteiten = () => {
     return (
-        <table className='container mx-auto text-left border-separate border border-slate-400'>
+        <table className='table-fixed container mx-auto border-separate border border-slate-400'>
             <thead>
                 <tr>
                     <th className='border border-slate-300'>Naam</th>
@@ -47,4 +47,4 @@ const TableBestuur = () => {
     );
 };
 
-export default TableBestuur;
+export default Activiteiten;

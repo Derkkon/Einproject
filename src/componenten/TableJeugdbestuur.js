@@ -2,7 +2,7 @@ import React from 'react';
 
 const TableJeugdbestuur = () => {
     return (
-        <table className='container mx-auto border-separate border border-slate-400'>
+        <table className='container mx-auto text-left border-separate border border-slate-400'>
             <thead>
                 <tr>
                     <th className='border border-slate-300'>Naam</th>
