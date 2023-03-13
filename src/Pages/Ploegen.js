@@ -1,62 +1,34 @@
-import React, { useState } from 'react';
-import {db} from '../config/Firebase';
-
+import React, { useEffect, useState } from 'react';
+import { db } from '../config/Firebase';
+import { getDocs, collection } from 'firebase/firestore';
 
 const Ploegen = () => {
-    const [info , setInfo] = useState([]);
- 
-    // Start the fetch operation as soon as
-    // the page loads
-    window.addEventListener('load', () => {
-        Fetchdata();
-      });
- 
-    // Fetch the required data using the get() method
-    const Fetchdata = ()=>{
-        db.collection("Spelers").get().then((querySnapshot) => {
-            
-            // Loop through the data and store
-            // it in array to display
-            querySnapshot.forEach(element => {
-                var Spelers = element.Spelers();
-                setInfo(arr => [...arr , Spelers]);
-                 
-            });
-        })
-    }
-    return (
+    const [spelerLijst, setSpelerLijst] = useState([]);
+
+    const spelerCollectionRef = collection(db, "Spelers");
+    useEffect(() => {
+        const getSpelerLijst = async () => {
+            try {
+                const data = await getDocs(spelerCollectionRef);
+                const filteredData = data.docs.map((doc) => ({...doc.data(), id: doc.id}));
+                setSpelerLijst(filteredData)
+                console.log(filteredData);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+
+        getSpelerLijst();
+    }, [])
+    
+    return(
         <div>
-            <center>
-            <h2>Student Details</h2>
-            </center>
-         
-        {
-            info.map((Spelers) => (
-            <Frame gd={Spelers.Geboortedatum}
-                   naam={Spelers.Naam}
-                   voornaam={Spelers.Voornaam}/>
-            ))
-        }
+            {spelerLijst.map((Spelers) => (
+                <div>
+                    <h1> {Spelers.Naam}</h1>
+                </div>>
+            ))}
         </div>
- 
-    );
-}
- 
-    // Define how each display entry will be structured
-    const Frame = ({naam , voornaam , gd}) => {
-        console.log(voornaam + " " + naam + " " + gd);
-        return (
-        <center>
-            <div className="div">
-                 
-    <p>NAME : {voornaam + " " + naam}</p>
-  
-                 
-    <p>Age : {gd}</p>
- 
-  
-            </div>
-        </center>
     );
 };
 
