@@ -26,7 +26,7 @@ const Ploegen = () => {
             {spelerLijst.map((Spelers) => (
                 <div>
                     <h1> {Spelers.Naam}</h1>
-                </div>>
+                </div>
             ))}
         </div>
     );
