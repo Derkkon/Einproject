@@ -25,7 +25,9 @@ const Ploegen = () => {
         <div>
             {spelerLijst.map((Spelers) => (
                 <div>
-                    <h1> {Spelers.Naam}</h1>
+                    <h1> {Spelers.Naam} {Spelers.Voornaam} </h1>
+                    <p> {Spelers.Ploeg} </p>
+                    <p> {Spelers.Geboortedatum} </p>
                 </div>
             ))}
         </div>
