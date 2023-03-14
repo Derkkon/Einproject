@@ -2,7 +2,7 @@ import { useState } from 'react';
 import news1 from '../assets/initiatietraining3.jpg';
 import news2 from '../assets/sticker.jpg';
 import news3 from '../assets/breakfast.jpg';
-import Footer from '../Pages/Footer';
+import Footer from './Footer';
 const HomeNews = () => {
     const [readMore, setReadMore] = useState(false);
     const [readMore1, setReadMore1] = useState(false);

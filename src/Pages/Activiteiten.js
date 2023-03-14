@@ -1,5 +1,5 @@
 import React from 'react';
-import TableActiviteiten from '../componenten/TableActiviteiten';
+import TableActiviteiten from '../componenten/Tabellen/TableActiviteiten';
 
 const Activiteiten = () => {
     return (

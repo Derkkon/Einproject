@@ -1,7 +1,7 @@
 import React from 'react';
 import gras from "../assets/grasA_1.png"
-import HomeNews from '../componenten/HomeNews';
-import ScrollBanner from '../componenten/ScrollBanner';
+import HomeNews from '../componenten/Home pagina comp/HomeNews';
+import ScrollBanner from '../componenten/Home pagina comp/ScrollBanner';
 
 const Home = () => {
     return (
