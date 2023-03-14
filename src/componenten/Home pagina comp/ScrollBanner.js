@@ -1,7 +1,7 @@
-import sponor1 from '../assets/sponsors/carrefour-logo.png'
-import sponor2 from '../assets/sponsors/Jako_logo.svg.png'
-import sponor3 from '../assets/sponsors/KBC_Bank_logo.png'
-import sponor4 from '../assets/sponsors/nike_PNG20.png'
+import sponor1 from '../../assets/sponsors/carrefour-logo.png'
+import sponor2 from '../../assets/sponsors/Jako_logo.svg.png'
+import sponor3 from '../../assets/sponsors/KBC_Bank_logo.png'
+import sponor4 from '../../assets/sponsors/nike_PNG20.png'
 
 
 const ScrollBanner = () => {
