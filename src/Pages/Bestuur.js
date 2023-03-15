@@ -1,6 +1,6 @@
 import React from 'react';
-import TableBestuur from '../componenten/Tabellen/TableBestuur';
-import TableJeugdbestuur from '../componenten/Tabellen/TableJeugdbestuur';
+import TableBestuur from '../componenten/Bestuur pagina comp/TableBestuur';
+import TableJeugdbestuur from '../componenten/Bestuur pagina comp/TableJeugdbestuur';
 
 const Bestuur = () => {
     return (

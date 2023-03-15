@@ -1,10 +1,10 @@
 import React from 'react';
-import TableActiviteiten from '../componenten/Tabellen/TableActiviteiten';
+import Activiteiten from '../componenten/Activiteiten pagina comp/Activiteiten';
 
 const Activiteiten = () => {
     return (
         <div className='my-5'>
-            <TableActiviteiten/>
+            <Activiteiten/>
         </div>
     );
 };

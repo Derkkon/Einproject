@@ -1,6 +1,6 @@
 import React from 'react';
-import rules from '../assets/grasbal.jpg'
-import image from '../assets/duel.jpg';
+import rules from '../../assets/grasbal.jpg';
+import image from '../../assets/duel.jpg';
 
 const MissieVisie = () => {
     return(
@@ -66,6 +66,13 @@ const MissieVisie = () => {
                         </li>
                     </ul>
                 </div>  
+            </div>
+            <div className='text-md text-center mt-4 font-regular mx-3'>
+                <h6>
+                    Belangrijk hierbij is dat we deze missie en visie willen uitdragen in een warme en familiale omgeving waarin spelers
+                    <br/> zich goed voelen,zich ten volle kunnen ontplooien en vooral met héél veel plezier komen voetballen.
+                    <br/> Onze jeugdwerking wil hierbij uitgroeien tot een referentieen voorbeeld binnen de regio.
+                </h6>
             </div>
         </div>
     )
