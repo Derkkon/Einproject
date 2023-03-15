@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableActiviteiten = () => {
+const TActiviteiten = () => {
     return (
         <table className='container mx-auto text-left border-separate border border-slate-400'>
             <thead>
@@ -63,4 +63,4 @@ const TableActiviteiten = () => {
     );
 };
 
-export default TableActiviteiten;
+export default TActiviteiten;

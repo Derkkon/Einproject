@@ -1,10 +1,10 @@
 import React from 'react';
-import Activiteiten from '../componenten/Activiteiten pagina comp/Activiteiten';
+import TActiviteiten from '../componenten/Activiteiten pagina comp/Activiteiten';
 
 const Activiteiten = () => {
     return (
         <div className='my-5'>
-            <Activiteiten/>
+            <Activiteiten />
         </div>
     );
 };
