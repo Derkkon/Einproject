@@ -7,6 +7,7 @@ import Bestuur from '../Pages/Bestuur';
 import Contact from '../Pages/Contact';
 import Over from '../Pages/Over';
 import Activiteiten from '../Pages/Activiteiten';
+import SpelerAanmaken from './Ploegen pagina comp/SpelerAanmaken';
 
 const Routing = () => {
     return (
@@ -18,6 +19,7 @@ const Routing = () => {
             <Route path='/activiteiten' element={<Activiteiten/>}/>
             <Route path='/ploegen' element={<Ploegen/>}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/spelerAanmaken' element={<SpelerAanmaken/>}/>
         </Routes>
     );
 };
