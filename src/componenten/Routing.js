@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Outlet, Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home';
 import SignIn from '../Pages/SignIn';
 import Ploegen from '../Pages/Ploegen';
@@ -8,18 +8,26 @@ import Contact from '../Pages/Contact';
 import Over from '../Pages/Over';
 import Activiteiten from '../Pages/Activiteiten';
 import SpelerAanmaken from './Ploegen pagina comp/SpelerAanmaken';
+//import CheckTeam from './Ploegen pagina comp/CheckTeam';
+import Inschrijven from './Activiteiten pagina comp/Inschrijven';
 
 const Routing = () => {
     return (
         <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/signIn' element={<SignIn/>}/>
+
+            <Route exact path='/signIn' element={<SignIn/>}/> 
             <Route path='/bestuur' element={<Bestuur/>}/>
             <Route path='/over' element={<Over/>}/>
-            <Route path='/activiteiten' element={<Activiteiten/>}/>
-            <Route path='/ploegen' element={<Ploegen/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/spelerAanmaken' element={<SpelerAanmaken/>}/>
+            <Route path='/ploegen' element={<Ploegen/>}/>
+
+            <Route path='/activiteiten' element={<Outlet/>}>
+                    <Route index  element={<Activiteiten/>}/>
+                    <Route path=':id' element={<Inschrijven/>}/>
+                </Route> 
+
+            {/* <Route path='' element={<PageNotFound/>}/>*/}
         </Routes>
     );
 };

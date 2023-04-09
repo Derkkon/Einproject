@@ -25,7 +25,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: scroll 15s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .sponsor-banner img {
@@ -35,10 +35,19 @@ code {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(10%);
   }
-
   100% {
     transform: translateX(-100%);
   }
+}
+
+.gras{
+  background-image: url(../src/assets/grasA_1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.gras{
+  background: url(../src/assets/grasA_1.png) cover center center no-repeat 
 }
