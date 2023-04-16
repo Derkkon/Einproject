@@ -17,7 +17,7 @@ const AlgemeneUitgangspunten = () => {
                 </h6>
             </div> 
             <div className="grid grid-cols-2 gap-4 mx-3">
-                <div className="bg-yellow-400 rounded-md pb-6">
+                <div className="bg-yellow-300 rounded-md pb-6">
                     <h3 className='text-base text-center mt-5 font-bold text-red-600 mb-5'>
                         Een kwaliteitsvolle opleiding voor IEDEREEN
                     </h3>
@@ -28,7 +28,7 @@ const AlgemeneUitgangspunten = () => {
                     </h6>
                 </div>
                 <div className="bg-red-600 rounded-md pb-6">
-                    <h3 className='text-base text-center mt-5 font-bold text-yellow-400 mb-5'>
+                    <h3 className='text-base text-center mt-5 font-bold text-yellow-300 mb-5'>
                         Geen enkel talent gaat verloren
                     </h3>
                     <h6 className='text-md text-center mt-4 font-regular mx-3'>
@@ -40,7 +40,7 @@ const AlgemeneUitgangspunten = () => {
                     </h6>
                 </div>
                 <div className="bg-red-600 rounded-md pb-6">
-                    <h3 className='text-base text-center mt-5 font-bold text-yellow-400 mb-5'>
+                    <h3 className='text-base text-center mt-5 font-bold text-yellow-300 mb-5'>
                         We maken onze talenten beter
                     </h3>
                     <h6 className='text-md text-center mt-4 font-regular mx-3'>
@@ -48,7 +48,7 @@ const AlgemeneUitgangspunten = () => {
                         <br/> extra aandacht te besteden aan hun werkpunten én hen continu te prikkelen en te voorzien van uitdagingen.
                     </h6>
                 </div>
-                <div className="bg-yellow-400 rounded-md pb-6">
+                <div className="bg-yellow-300 rounded-md pb-6">
                     <h3 className='text-base text-center mt-5 font-bold text-red-600 mb-5'>
                         We hanteren een duidelijk spelconcept
                     </h3>

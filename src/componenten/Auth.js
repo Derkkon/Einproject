@@ -1,4 +1,4 @@
-import { auth, googleProvider } from '../config/Firebase';
+import { auth, googleProvider } from '../config/firebase';
 import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useState } from 'react';
 import Alert from './Alert';

@@ -1,6 +1,6 @@
 import { addDoc, collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { db } from "../../config/Firebase";
+import { db } from "../../config/firebase";
 import { useParams } from "react-router-dom";
 
 const Inschrijven = () => {

@@ -25,7 +25,7 @@ const Bestuur = () => {
             </div>
             <div>
                 <h2 className='text-xl text-center my-5 font-bold text-red-400'>
-                    Bestuur bovenbouw
+                    Algemeen bestuur
                 </h2>
                 <h6 className='text-md text-center my-5 font-regular mx-3'>
                     Naast het jeugdbestuur hebben we ook een jeugdwerking, dit zijn een gedreven groep vrijwilligers die zich

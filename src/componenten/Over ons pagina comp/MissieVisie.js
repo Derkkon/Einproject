@@ -10,7 +10,7 @@ const MissieVisie = () => {
             </h2>  
 
             <div className="grid grid-cols-2 gap-4 mx-3">
-                <div className="bg-yellow-400 rounded-md">
+                <div className="bg-yellow-300 rounded-md">
                     
                     <img src={rules} alt="rules" />
                     <h6 className='text-md text-left mt-5 font-regular mx-3 '>

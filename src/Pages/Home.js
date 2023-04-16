@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeNews from '../componenten/Home pagina comp/HomeNews';
+import Footer from '../componenten/Home pagina comp/Footer';
 import ScrollBanner from '../componenten/Home pagina comp/ScrollBanner';
 
 const Home = () => {
