@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home';
 import SignIn from '../Pages/SignIn';
+import Registreren from '../Pages/Registreren';
 import Ploegen from '../Pages/Ploegen';
 import Bestuur from '../Pages/Bestuur';
 import Contact from '../Pages/Contact';
 import Over from '../Pages/Over';
 import Activiteiten from '../Pages/Activiteiten';
-import SpelerAanmaken from './Ploegen pagina comp/SpelerAanmaken';
-//import CheckTeam from './Ploegen pagina comp/CheckTeam';
 import Inschrijven from './Activiteiten pagina comp/Inschrijven';
 
 const Routing = () => {
@@ -17,6 +16,7 @@ const Routing = () => {
             <Route exact path='/' element={<Home/>}/>
 
             <Route exact path='/signIn' element={<SignIn/>}/> 
+            <Route exact path='/registreren' element={<Registreren/>}/> 
             <Route path='/bestuur' element={<Bestuur/>}/>
             <Route path='/over' element={<Over/>}/>
             <Route path='/contact' element={<Contact/>}/>

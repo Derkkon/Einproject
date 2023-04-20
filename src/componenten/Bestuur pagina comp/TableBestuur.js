@@ -1,49 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { db } from '../../config/firebase';
+import {collection, getDocs} from 'firebase/firestore';
 
-const TableBestuur = () => {
+function TableBestuur()  {
+    const [bestuurLijst, setbestuurLijst] = useState([]);
+
+    const bestuurCollectionRef = collection(db, 'Hoofdbestuur');
+
+    useEffect(() =>{
+        const getBestuurLijst = async () => {
+            try {
+                const data = await getDocs(bestuurCollectionRef);
+                const filteredData = data.docs.map((doc) => ({...doc.data(), id: doc.id,}));
+                setbestuurLijst(filteredData);
+            } catch (err) {
+                console.error(err);
+            } 
+        };
+
+        getBestuurLijst();
+    }, [])
+    
     return (
-        <table className='container mx-auto text-left border-separate border border-slate-400'>
-            <thead>
-                <tr>
-                    <th className='border border-slate-300'>Naam</th>
-                    <th className='border border-slate-300'>Functie</th>
-                    <th className='border border-slate-300'>E-mail</th>
-                    <th className='border border-slate-300'>Mobiel</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td className='border border-slate-300'>Everaerts Tim</td>
-                    <td className='border border-slate-300'>AVJO / Jeugdvoorzitter</td>
-                    <td className='border border-slate-300'>tim@scduffel.be</td>
-                    <td className='border border-slate-300'>0489/740210</td>
-                </tr>
-                <tr>
-                    <td className='border border-slate-300'>fgh rgrh</td>
-                    <td className='border border-slate-300'>dgd</td>
-                    <td className='border border-slate-300'>ddgg</td>
-                    <td className='border border-slate-300'>gg</td>
-                </tr>
-                <tr>
-                    <td className='border border-slate-300'>dfsh th</td>
-                    <td className='border border-slate-300'>fdf</td>
-                    <td className='border border-slate-300'>fffd</td>
-                    <td className='border border-slate-300'>fdfff</td>
-                </tr>
-                <tr>
-                    <td className='border border-slate-300'>fdffbb dthg</td>
-                    <td className='border border-slate-300'>ffddf</td>
-                    <td className='border border-slate-300'>ff</td>
-                    <td className='border border-slate-300'>rhthdt</td>
-                </tr>
-                <tr>
-                    <td className='border border-slate-300'>rejuuj gjf</td>
-                    <td className='border border-slate-300'>dtht</td>
-                    <td className='border border-slate-300'>eht</td>
-                    <td className='border border-slate-300'>dht</td>
-                </tr>
-            </tbody>
-        </table>
+        <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20">
+                {bestuurLijst.map((Hoofdbestuur) => (
+                    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <h2 className="text-xl text-center pb-5 font-bold text-red-600">{Hoofdbestuur.Functie}</h2>
+                        <h6 className='text-center'>Naam: {Hoofdbestuur.Voornaam} {Hoofdbestuur.Familienaam}</h6>
+                        <h6 className='text-center'>E-mail: {Hoofdbestuur.Email}</h6>
+                    </div>
+                ))}
+            </div>
+       </div>
     );
 };
 

@@ -22,14 +22,16 @@ function TableJeugdbestuur()  {
     }, [])
     
     return (
-       <div className="grid grid-cols-3 gap-4 mx-20 ">
-            {jeugdbLijst.map((Jeugdbestuur) => (
-                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <h2 className="text-xl text-center pb-5 font-bold text-red-600">{Jeugdbestuur.Functie}</h2>
-                <h6 className='text-center'>Naam: {Jeugdbestuur.Voornaam} {Jeugdbestuur.Familienaam}</h6>
-                <h6 className='text-center'>E-mail: {Jeugdbestuur.Email}</h6>
-                </div>
-        ))}
+        <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20">
+                {jeugdbLijst.map((Jeugdbestuur) => (
+                    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <h2 className="text-xl text-center pb-5 font-bold text-red-600">{Jeugdbestuur.Functie}</h2>
+                        <h6 className='text-center'>Naam: {Jeugdbestuur.Voornaam} {Jeugdbestuur.Familienaam}</h6>
+                        <h6 className='text-center'>E-mail: {Jeugdbestuur.Email}</h6>
+                        </div>
+                ))}
+            </div>
        </div>
     );
 };
