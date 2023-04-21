@@ -9,7 +9,7 @@ const MissieVisie = () => {
                 Missie & Visie
             </h2>  
 
-            <div className="grid grid-cols-2 gap-4 mx-3">
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mx-3">
                 <div className="bg-yellow-300 rounded-md">
                     
                     <img src={rules} alt="rules" />

@@ -16,7 +16,7 @@ const AlgemeneUitgangspunten = () => {
                     <br/> (opleiding voor resultaat, willen winnen maar kunnen verliezen…) zijn de volgende uitgangspunten hierbij belangrijk:
                 </h6>
             </div> 
-            <div className="grid grid-cols-2 gap-4 mx-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-3">
                 <div className="bg-yellow-300 rounded-md pb-6">
                     <h3 className='text-base text-center mt-5 font-bold text-red-600 mb-5'>
                         Een kwaliteitsvolle opleiding voor IEDEREEN
