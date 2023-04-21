@@ -50,7 +50,7 @@ export const Register = () =>{
   };
 
   return (
-    <div className="App">
+    <>
       <div>
         <h3> Register User </h3>
         <input
@@ -91,6 +91,6 @@ export const Register = () =>{
       {user?.email}
 
       <button onClick={logout}> Sign Out </button>
-    </div>
+    </>
   );
 }
