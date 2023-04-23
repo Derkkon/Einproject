@@ -12,10 +12,10 @@ const Navbar = () => {
      <img className="h-8 w-8" src={logo} alt="Logo"/>
    </a>
   <div className="flex md:order-2">
-  <a href={'/Register'}>
+  <a href={'/registreren'}>
       <button type="button" className="text-white bg-red-700 rounded-lg hover:bg-red-500 hover:text-yellow-300  text-sm px-4 py-2 text-center mr-3 md:mr-0 text-md font-medium">Register</button> 
    </a>
-  <a href={'/SignIn'}>
+  <a href={'/signIn'}>
       <button type="button" className="text-red-700  hover:text-yellow-200 text-sm px-4 py-2 text-center mr-3 md:mr-0 text-md font-medium">Aanmelden</button>
    </a>
       <button data-collapse-toggle="navbar-cta" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">

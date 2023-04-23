@@ -1,4 +1,4 @@
-import SpelersLijstComp from "../componenten/SpelersLijstComp";
+import SpelersLijstComp from "../componenten/Ploegen pagina comp/SpelersLijstComp";
 
 
 const Ploegen = () => {

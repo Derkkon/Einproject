@@ -15,8 +15,8 @@ const Routing = () => {
         <Routes>
             <Route exact path='/' element={<Home/>}/>
 
-            <Route exact path='/signIn' element={<SignIn/>}/> 
-            <Route exact path='/registreren' element={<Registreren/>}/> 
+            <Route path='/signIn' element={<SignIn/>}/> 
+            <Route path='/registreren' element={<Registreren/>}/> 
             <Route path='/bestuur' element={<Bestuur/>}/>
             <Route path='/over' element={<Over/>}/>
             <Route path='/contact' element={<Contact/>}/>

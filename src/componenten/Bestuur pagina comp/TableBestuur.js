@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../config/firebase';
-import {collection, getDocs} from 'firebase/firestore';
+import { getDocs, collection } from 'firebase/firestore';
 
-function TableBestuur()  {
+async function TableBestuur()  {
     const [bestuurLijst, setbestuurLijst] = useState([]);
 
-    const bestuurCollectionRef = collection(db, 'Hoofdbestuur');
+    const bestuurCollectionRef = collection(db, "Hoofdbestuur");
 
     useEffect(() =>{
         const getBestuurLijst = async () => {
@@ -27,8 +27,8 @@ function TableBestuur()  {
                 {bestuurLijst.map((Hoofdbestuur) => (
                     <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <h2 className="text-xl text-center pb-5 font-bold text-red-600">{Hoofdbestuur.Functie}</h2>
-                        <h6 className='text-center'>Naam: {Hoofdbestuur.Voornaam} {Hoofdbestuur.Familienaam}</h6>
-                        <h6 className='text-center'>E-mail: {Hoofdbestuur.Email}</h6>
+                        <h6 className="text-center">Naam: {Hoofdbestuur.Voornaam} {Hoofdbestuur.Familienaam}</h6>
+                        <h6 className="text-center">E-mail: {Hoofdbestuur.Email}</h6>
                     </div>
                 ))}
             </div>

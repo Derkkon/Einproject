@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { db } from '../config/firebase';
+import { db } from '../../config/firebase';
 import { getDocs, collection } from 'firebase/firestore';
 
 const SpelersLijstComp = () => {
@@ -23,15 +23,7 @@ const SpelersLijstComp = () => {
     }, [])
     
     return(
-        <div>
-            <div className='text-center '>
-                <a 
-                href={'/spelerAanmaken'}
-                rel={"noreferrer"}
-                className='inline-block px-4 text-white bg-red-600 rounded'>
-                    Speler aanmaken
-                </a>
-            </div>
+        <>
             {spelerLijst.map((Spelers) => (
                 <div className='text-center'>
                     <h1> {Spelers.Naam} {Spelers.Voornaam} </h1>
@@ -40,7 +32,7 @@ const SpelersLijstComp = () => {
                 </div>
             ))}
             
-        </div>
+        </>
     );
 };
 

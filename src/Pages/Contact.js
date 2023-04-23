@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <div className="flex justify-center mb-10">
                 <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <h6>Al uw vragen kunt u naar ons sturen en wij zullen ze zo snel mogelijk beantwoorden</h6>
+                  <h6>Al uw vragen kunt u naar ons sturen en wij zullen ze zo snel mogelijk beantwoorden.</h6>
                 </div>
               </div>
               <div className="flex justify-center mt-10">
