@@ -1,5 +1,5 @@
 import { auth, googleProvider } from '../config/firebase';
-import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useState } from 'react';
 import Alert from './Alert';
 import { useNavigate  } from 'react-router-dom';
@@ -14,9 +14,9 @@ export const Auth = () => {
     const signIn = async () => {
       try{
         if(email !== "" || password !== ""){
-          await createUserWithEmailAndPassword(auth, email, password);
+          await signInWithEmailAndPassword(auth, email, password);
+          setEmptyFields(false)
           setIsLoggedIn(true);
-          console.log('logged in')
           setTimeout(() => {
             navigate('/');
           }, 2000);          
@@ -41,12 +41,10 @@ export const Auth = () => {
     };
 
     return (
-      <div>
-        {emptyFields && <Alert alertStyle={"danger"} info={"Empty fields"} message={"Please fill in all the fields"}/>}
-        {isLoggedIn && <Alert alertStyle={"warning"} info={"Logged in!"} message={"You are logged in now and will be redirected to home in a second"}/>}
+      <>
          <h1 className='text-3xl text-center mt-10 font-bold text-red-600'>
                Aanmelden
-            </h1> 
+          </h1> 
         <div className="h-full mt-20 flex justify-center items-center">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
@@ -70,6 +68,8 @@ export const Auth = () => {
             </button>
           </form>
         </div>
-      </div>
+          {emptyFields && <Alert alertStyle={"danger"} info={"Lege velden"} message={"Vul alle velden in a.u.b."}/>}
+          {isLoggedIn && <Alert info={"Ingelogd"} message={"U bent ingelogd en zal worden teruggestuurd naar de Home pagina."}/>}
+      </>
     );
 };

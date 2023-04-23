@@ -4,7 +4,7 @@ import TableJeugdbestuur from '../componenten/Bestuur pagina comp/TableJeugdbest
 
 const Bestuur = () => {
     return (
-        <div>
+        <>
             <h1 className='text-3xl text-center p-5 font-bold text-red-600'>
                 Het Bestuur
             </h1> 
@@ -38,7 +38,7 @@ const Bestuur = () => {
             <div className='my-5'>
                 <TableBestuur/>
             </div>    
-        </div>
+        </>
     );
 };
 
