@@ -32,7 +32,7 @@ const Activiteit = () => {
                                  <h2 className="text-xl text-center p-5 font-bold text-red-600">{Activiteit.Naam}</h2>
                                 <p className="mb-3 font-normal">{Activiteit.Beschrijving} ...</p>
                                 <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Lees meer
+                                    Insvhrijven
                                 </div>
 
                             </Link>
