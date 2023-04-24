@@ -47,9 +47,9 @@ const Inschrijven = () => {
        
     return(
         <>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
-            <div>
-                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className="container mx-auto">
+            <div className="flex justify-center mt-10">
+                <form className="w-full max-w-sm bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <h2 className='text-3xl text-center p-5 font-bold text-red-600'>Inschrijven</h2>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -70,11 +70,6 @@ const Inschrijven = () => {
                     </button>
                 </form>
             </div>
-            {/* <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <h2 className='text-3xl text-center p-5 font-bold text-red-600'>{Activiteit.Naam}</h2>
-                    <img scr={Activiteit.Foto} alt={Activiteit.Naam}/>
-                <p className="mt-4">{Activiteit.Beschrijving}</p>
-            </div> */}
         </div>
         {ingeschreven && <Alert info={'Ingeschreven!'} message={'U bent ingeschreven voor deze activiteit'}/>}
         {emptyFields && <Alert alertStyle={"danger"} info={'Lege velden!'} message={'Vul alle velden in a.u.b.'}/>}
