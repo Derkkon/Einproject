@@ -1,22 +1,16 @@
 import { useEffect, useState } from 'react';
 import { db } from '../../config/firebase';
-import { getDocs, collection, query, where, doc } from 'firebase/firestore';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 
-const SpelersLijstComp = async () => {
+const SpelersLijstComp = () => {
     const [spelerLijst, setSpelerLijst] = useState([]);
-    const [word, setWord] = useState('')
+    const [ploeg, setPloeg] = useState("")
 
     const spelerCollectionRef = collection(db, "Spelers");
 
-    const q = query(spelerCollectionRef, where("Ploeg", "==", "U6"));
-    const querySnapshot = await getDocs(q);
-    querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-    });
-
     const getSpelerLijst = async () => {
         try {
-            const data = await getDocs(spelerCollectionRef, where("state", "==", word));
+            const data = await getDocs(spelerCollectionRef, where("state", "==", ploeg));
             const filteredData = data.docs.map((doc) => ({...doc.data(), id: doc.id}));
             setSpelerLijst(filteredData)
         } catch (err) {
