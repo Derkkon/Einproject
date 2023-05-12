@@ -36,6 +36,9 @@ const Navbar = () => {
         <li>
           <a href={'/contact'} className="block pl-3 pr-4 text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Contact</a>
         </li>
+        <li>
+          <a href={'https://scduffel.shop4clubs.eu/'} target={"_blank"} rel={"noreferrer"} className="block pl-3 pr-4 text-red-600 hover:text-white hover:bg-red-600 rounded-md px-3 py-2 text-md font-medium">Kledij</a>
+        </li>
       </ul>
     </div>
   </div>
