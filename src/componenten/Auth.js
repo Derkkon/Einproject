@@ -67,7 +67,7 @@ export const Auth = () => {
           <button onClick={googleLogin} className="w-full mt-2 bg-slate-100 hover:bg-slate-300 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Inloggen met google
           </button>
-          <p className="text-xs mt-5">Already an account? <Link to={'/registreren'} className="text-red-500 hover:text-red-600">Click here</Link></p>
+          <p className="text-xs mt-5">Nog geen account? <Link to={'/registreren'} className="text-red-500 hover:text-red-600">Klik hier</Link></p>
         </form>
         {emptyFields && <Alert alertStyle={"danger"} info={"Lege velden"} message={"Vul alle velden in a.u.b."} />}
         {isLoggedIn && <Alert info={"Ingelogd"} message={"U bent ingelogd en zal worden teruggestuurd naar de Home pagina."} />}

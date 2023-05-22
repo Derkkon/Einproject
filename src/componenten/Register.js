@@ -58,7 +58,7 @@ export const Register = () =>{
             <button onClick={register} className="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-3" type="button">
               Registreren
             </button>
-            <p className="text-xs">Already an account? <Link to={'/signIn'} className="text-red-500 hover:text-red-600">Click here</Link></p>
+            <p className="text-xs">Heb je al een account? <Link to={'/signIn'} className="text-red-500 hover:text-red-600">klik hier</Link></p>
           </form>
           {emptyFields && <Alert alertStyle={"danger"} info={"Lege velden"} message={"Vul alle velden in a.u.b."} />}
         </div>
