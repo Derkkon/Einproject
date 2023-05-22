@@ -2,10 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { auth } from '../config/firebase';
 import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
+import Alert from './Alert';
+import { useNavigate } from 'react-router-dom';
 
 export const Register = () =>{
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+  const [emptyFields, setEmptyFields] = useState(false);
+  const navigate = useNavigate();
 
   const [user, setUser] = useState({});
 
@@ -15,12 +19,17 @@ export const Register = () =>{
 
   const register = async () => {
     try {
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        registerEmail,
-        registerPassword
-      );
-      console.log(user);
+      if (registerEmail !== "" && registerPassword !== ""){
+      const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
+      setEmptyFields(false);
+      setTimeout(() => {
+        navigate('/signIn');
+      }, 5000);
+      }
+      else {
+        setEmptyFields(true)
+      }
+      
     } catch (error) {
       console.log(error.message);
     }
@@ -51,6 +60,7 @@ export const Register = () =>{
             </button>
             <p className="text-xs">Already an account? <Link to={'/signIn'} className="text-red-500 hover:text-red-600">Click here</Link></p>
           </form>
+          {emptyFields && <Alert alertStyle={"danger"} info={"Lege velden"} message={"Vul alle velden in a.u.b."} />}
         </div>
       </>
   );

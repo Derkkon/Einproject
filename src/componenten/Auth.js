@@ -16,11 +16,11 @@ export const Auth = () => {
     try {
       if (email !== "" && password !== "") {
         await signInWithEmailAndPassword(auth, email, password);
-        setEmptyFields(false)
+        setEmptyFields(false);
         setIsLoggedIn(true);
         setTimeout(() => {
           navigate('/');
-        }, 2000);
+        }, 5000);
       }
       else {
         setEmptyFields(true)
