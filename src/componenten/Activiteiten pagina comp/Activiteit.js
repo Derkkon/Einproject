@@ -31,7 +31,7 @@ const Activiteit = () => {
                                  <img src={Activiteit.Foto} alt='img'/> 
                                  <h2 className="text-xl text-center p-5 font-bold text-red-600">{Activiteit.Naam}</h2>
                                 <p className="mb-3 font-normal">{Activiteit.Beschrijving} ...</p>
-                                <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-200 dark:bg-yellow-300 dark:hover:bg-yellow-400 dark:focus:ring-yellow-500">
                                     Inschrijven
                                 </div>
 
